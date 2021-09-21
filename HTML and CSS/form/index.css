@@ -1,0 +1,319 @@
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+/* AUTHOR :SANJAYPRANAV V M */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 20px;
+  background-color: #093478;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* ---------------------------------------- */
+/* REUSABLE CONTENTS */
+/* ---------------------------------------- */
+
+/* Headings */
+h1 {
+  font-size: 210%;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Button links */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #08d1ab;
+  padding: 12px 25px;
+  border-radius: 3px;
+  margin-top: 15px;
+  font-size: 90%;
+  text-align: center;
+  color: #06224a;
+  width: 80%;
+  color: #2c2c2c;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #00a082;
+}
+
+/* Utility classes*/
+.u-margin-top-small {
+  margin-top: 10px;
+}
+
+.underline {
+  color: #08d1ab;
+  text-decoration: underline;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+.no-display {
+  display: none;
+}
+
+/* Animations */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.rotate:hover {
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+}
+
+/* ---------------------------------------- */
+/* HEADER AND NAVBAR */
+/* ---------------------------------------- */
+
+/* Navbar */
+nav {
+  box-shadow: 0 5px 10px #000;
+  padding: 15px 5%;
+}
+
+.navbar {
+  list-style: none;
+  float: right;
+  margin: 16px 10px 0 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 90%;
+}
+
+.navbar li a:link,
+.navbar li a:visited {
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+  border-bottom: 2px solid #fff;
+}
+
+.login:link,
+.login:visited {
+  background: #f76f46;
+  padding: 10px 20px !important;
+  border-radius: 2px;
+}
+
+.login:hover,
+.login:active {
+  border: none !important;
+  background: #be5333;
+}
+
+/* Language select */
+select {
+  padding: 3px 8px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  background-color: #093478;
+  color: #fff;
+}
+
+.lang-flag {
+  position: relative;
+  top: 2px;
+}
+
+/* LOGO */
+
+.logo-t {
+  color: #f06d40;
+  font-size: 140%;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 130%;
+}
+
+/* MAIN SECTION */
+
+main {
+  padding: 0 2% 0 2%;
+}
+
+.left-box {
+  display: inline-block;
+  width: 64%;
+  padding: 30px;
+  padding-top: 0;
+  position: relative;
+  bottom: 25px;
+}
+
+.right-box {
+  display: inline-block;
+  width: 34%;
+  padding: 3%;
+}
+
+/* Left box styles */
+
+.content {
+  font-size: 85%;
+  position: relative;
+  bottom: 70px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+/* The three cards*/
+.box {
+  height: 250px;
+  background: rgba(33, 193, 177, 0.2);
+  border-radius: 5px;
+  position: relative;
+  bottom: 80px;
+}
+
+.card_heading {
+  text-align: center;
+  color: #fff;
+}
+
+.down-arrow {
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  bottom: 5px;
+  /* text-align: center; */
+  transform: translateX(172%);
+}
+
+/* Right box styles */
+
+.right-box {
+  position: relative;
+  top: 70px;
+}
+
+/* FORM */
+
+label {
+  display: block;
+  color: #08d1ab;
+  font-size: 70%;
+}
+
+input {
+  width: 80%;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #bff0f5;
+}
+
+input::placeholder {
+  color: rgb(153, 153, 153);
+  font-size: 90%;
+}
+
+sup {
+  color: #ff0000;
+}
+
+.terms-text {
+  display: inline-block;
+}
+
+.tick-box {
+  text-align: left;
+  width: 5%;
+}
+
+/* LOGIN BOX */
+
+#login-form input {
+  width: 100%;
+}
+
+#login-form input[type="checkbox"] {
+  width: 5%;
+}
+
+#login-form a {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.close-icon {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 150%;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-icon:hover {
+  color: #08d1ab;
+}
+
+/* LOGIN BOX */
+
+.login-box {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: rgba(6, 34, 74, 0.75);
+  border: 1px solid #21c1b1;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  padding: 2%;
+  border-radius: 3px;
+}

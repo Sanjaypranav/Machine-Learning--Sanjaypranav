@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="media.css">
+
+        <title>SignUp Form</title>
+    </head>
+
+    <body>
+        <div class="main">
+
+            <section class="signup-section">
+
+                <div class="signup-form">
+
+                    <form class="register-form" action="index.html" method="post">
+
+                        <h2 class="heading1" id="first">Sign Up</h2>
+
+                        <div class="form-group">
+                            <input type="text" name="Username" id="Username" placeholder="Your Name" required>
+                            <label for="Username">&nbsp; Your Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="Email" id="Email" placeholder="Your Email" required>
+                            <label for="Email">&nbsp;&nbsp; Your Email</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="Password" id="Password" placeholder="Password" required>
+                                <label for="Password">&nbsp;&nbsp; Password</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="Password-repeat" id="Password-repeat" placeholder="Repeat Password" required>
+                            <label for="Password-repeat">&nbsp;&nbsp; Repeat Password</label>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="Checkbox" id="Checkbox">
+                            <label for="Checkbox" class="Checkbox"><span><span></span></span>I agree all statements in  <a href="#">Terms of service</a></label>
+                        </div>
+
+                        <div class="form-button">
+                            <button type="submit" name="btn">Register</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="signup-image">
+                    <img src="signup-image.jpg" alt="SignUp Image">
+                    <a href="#second">I am already a member</a>
+                </div>
+
+            </section>
+
+            <section class="signin-section">
+
+                <div class="signin-image">
+                    <img src="signin-image.jpg" alt="Sign in image">
+                    <a href="#first">Cteate an account</a>
+                </div>
+
+                <div class="signin-form">
+
+                    <h2 class="heading2" id="second">Sign In</h2>
+
+                    <form class="login-form" action="#" method="post">
+
+                        <div class="form-group">
+                            <input type="text" name="Username-login" id="Username-login" placeholder="Your Name" required>
+                            <label for="Username-login">&nbsp; Your Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="Password-login" id="Password-login" placeholder="Password" required>
+                                <label for="Password-login">&nbsp;&nbsp; Password</label>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="Checkbox-login" id="Checkbox-login">
+                            <label for="Checkbox-login" class="Checkbox-login"><span><span></span></span>Remember Me</label>
+                        </div>
+
+                        <div class="form-button">
+                            <button type="submit" name="btn">Login</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </body>
+</html>

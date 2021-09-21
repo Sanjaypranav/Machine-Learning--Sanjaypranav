@@ -1,0 +1,74 @@
+@media (max-width:1080px) {
+
+        body {
+            font-size: 4rem;
+        }
+
+        .main {
+            width: 90%;
+        }
+
+        /* The Signup Section */
+        .signup-section {
+            padding: 0;
+        }
+
+        .signup-section::after {
+            margin: 10rem auto 0 auto;
+        }
+
+        .heading1 {
+            display: block;
+            text-align: center;
+        }
+
+        .signup-form {
+            display: block;
+            width: 100%;
+            margin-bottom: 8rem;
+            text-align: center;
+        }
+
+        .form-button button {
+            padding: 1.5rem 5rem;
+        }
+
+        .signup-image {
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+
+        .signup-image a {
+            display: block;
+            width: 21rem;
+            margin: 1rem 3% 0 45%;
+        }
+
+        /* The signin section */
+
+        .signin-image {
+            text-align: center;
+            display: block;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .heading2 {
+            text-align: center;
+            margin-right: 0;
+        }
+
+        .signin-form {
+            display: block;
+            width: 100%;
+            margin-bottom: 8rem;
+            text-align: center;
+        }
+
+        .form-group label {
+            display: block;
+            text-align: left;
+            margin-left: 10.5rem;
+        }
+}
