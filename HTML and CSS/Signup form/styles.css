@@ -1,0 +1,177 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    color: rgba(0, 0, 5, .9);
+    scroll-behavior: smooth;
+}
+
+/* HTML Tags */
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    color: #000;
+    margin-bottom: 3.5rem;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blue;
+}
+
+input {
+    border: none;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #999;
+    border-radius: 1px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid green;
+}
+
+input:focus:invalid {
+    border-bottom: 2px solid orange;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.7);
+    transition: all .3s;
+}
+
+/* Main Section */
+.main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Sign Up Section */
+
+.signup-section {
+    padding: 5rem;
+    margin-bottom: 4rem;
+}
+
+.signup-section::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    background-color: cornflowerblue;
+    margin: 28rem auto 0 auto;
+}
+
+.signup-form {
+    display: inline-block;
+    width: 45%;
+    margin-right: 10%;
+    float: left;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input {
+    font-size: 1.6rem;
+    padding: 1.2rem 1.5rem;
+    font-family: inherit;
+    width: 80%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+/* The placeholder animation */
+input:placeholder-shown + label {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Checkbox styles */
+.form-checkbox label {
+    display: inline-block;
+}
+
+/* Button Styles */
+.form-button {
+    margin-top: 4rem;
+}
+
+.form-button button {
+    padding: 1.5rem 6rem;
+    border-radius: 2.2rem;
+    border: 1px solid #318CE7;
+    background-color: #318CE7;
+    color: #fff;
+}
+
+.form-button button:hover {
+    background-color: #005FE7;
+}
+
+/* Signup image container */
+
+.signup-image {
+    display: inline-block;
+    width: 45%;
+}
+
+.signup-image a,
+.signin-image a {
+    display: inline-block;
+    font-size: 1.9rem;
+    margin-top: 3.5rem;
+    margin-left: 6rem;
+}
+
+/* The signin section */
+
+.signin-section {
+    margin-bottom: 8rem;
+    margin-top: 10rem;
+}
+
+.signin-image {
+    display: inline-block;
+    width: 45%;
+    margin-right: 10%;
+    float: left;
+}
+
+.heading2 {
+    text-align: right;
+    margin-right: 9rem;
+}
+
+.signin-form {
+    display: inline-block;
+    width: 45%;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="grid.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <title>Title</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo"
+          ><span class="logo-t">T</span>&nbsp; TradingTable</a
+        >
+
+        <ul class="navbar">
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Vision</a></li>
+          <li><a href="#">Get More Information</a></li>
+          <li><a href="#" class="login">Login</a></li>
+
+          <li>
+            <img
+              src="img/us-flag.png"
+              alt="English language"
+              class="lang-flag"
+            />
+            <select class="lang-select" onchange="changeLogo()">
+              <option selected>English</option>
+              <option>Deutch</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="left-box">
+        <h1>COLLABORATIVE<br />TRADING</h1>
+        <p class="content">
+          Invest together with your friends, collegues, familiy and
+          professionals in unlimited Portfolios managed by your own. Choose from
+          the various offered products and suceed together with your team.
+        </p>
+
+        <div class="section group container">
+          <div class="col span_1_of_3 box">
+            <p class="card_heading">Collaborative</p>
+            <img src="img/down-arrow.svg" alt="Down arrow" class="down-arrow" />
+          </div>
+          <div class="col span_1_of_3 box">
+            <p class="card_heading">Portfolios</p>
+            <img src="img/down-arrow.svg" alt="Down arrow" class="down-arrow" />
+          </div>
+          <div class="col span_1_of_3 box">
+            <p class="card_heading">Market</p>
+            <img src="img/down-arrow.svg" alt="Down arrow" class="down-arrow" />
+          </div>
+        </div>
+      </div>
+
+      <div class="right-box">
+        <h2>Register Account!</h2>
+
+        <div class="form_container">
+          <form action="">
+            <label for="name">Your full name<sup>*</sup></label>
+            <input
+              type="text"
+              id="name"
+              autocomplete="off"
+              placeholder="Harry Potter"
+            />
+            <br />
+
+            <label for="email">Email adddress<sup>*</sup></label>
+            <input
+              type="email"
+              id="email"
+              autocomplete="off"
+              placeholder="Enter Your Email"
+            />
+            <br />
+
+            <label for="password">Create password<sup>*</sup></label>
+            <input
+              type="password"
+              id="password"
+              autocomplete="off"
+              placeholder="**********"
+            />
+            <br />
+
+            <input type="checkbox" class="tick-box" />
+            <label class="terms-text"
+              >I agree to <a href="#">terms and conditions.</a></label
+            >
+            <br />
+
+            <a href="#" type="submit" class="btn">Register Account</a>
+            <!-- a is an inline element -->
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div class="login-box no-display">
+      <div class="close-icon rotate">&times;</div>
+      <h2>Login</h2>
+      <form action="" id="login-form">
+        <label for="email">Email adddress<sup>*</sup></label>
+        <input
+          type="email"
+          id="email"
+          autocomplete="off"
+          placeholder="Enter Your Email"
+        />
+        <br />
+
+        <label for="password">Enter password<sup>*</sup></label>
+        <input type="password" id="password" autocomplete="off" />
+        <br />
+
+        <input type="checkbox" class="tick-box" />
+        <label class="terms-text">Remember Me</label>
+        <br />
+
+        <a href="#" type="submit" class="btn">Login</a>
+        <!-- a is an inline element -->
+      </form>
+    </div>
+
+    <!-- <div class="overlay no-display"></div> -->
+    <!-- <button onclick="changeLanguage()">Change Langua</button> -->
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
