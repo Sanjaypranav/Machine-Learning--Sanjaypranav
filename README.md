@@ -5,5 +5,3 @@
 ##2) Unsupervised Learning
 
 ##3) Reinforcement learning*
-
-
